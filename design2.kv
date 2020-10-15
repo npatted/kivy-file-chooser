@@ -1,0 +1,6 @@
+<MyWidget>:
+    id: my_widget
+    FileChooserListView:
+        id: filechooser
+        filters: ['*.csv']
+        on_selection: my_widget.open(filechooser.path, filechooser.selection)
